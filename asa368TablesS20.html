@@ -1,0 +1,114 @@
+<!--
+Name: Adrian Atanasov
+Pawprint: asa368
+Date: 02/10/20
+Challenge 4: Tables Spring 2020
+https://www.w3schools.com/bootstrap/bootstrap_get_started.asp - 13
+https://www.bootstrapcdn.com - 13
+https://www.w3schools.com/tags/att_colspan.asp - 34
+https://www.w3schools.com/css/css_howto.asp - 17
+https://www.geeksforgeeks.org/html-rowspan-attribute/ - 48, 61
+https://fonts.google.com - 20, 21
+https://www.w3schools.com/tags/tag_hr.asp - 90
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="tables.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Classes Taken</title>
+		<script>
+			if(!window.localStorage.getItem('hello')){
+				window.location.replace("http://54.162.221.92.xip.io/portfolio/");
+			}
+		</script>
+	</head>
+	<body>
+		<ul class="bar">
+			<li class="alignt"><a href="asa368Portfolio">Adrian Atanasov</a></li>
+			<li class="alignt"><a href="asa368Columns">Skills</a></li>
+			<li class="alignt"><a href="asa368TablesS20">Courses Taken</a></li>
+			<li class="alignt"><a href="asa368ProjectsS20">Projects</a></li>
+		</ul>
+		<div class="container-fluid">
+			<table>
+				<thead>
+					<tr>
+						<th class="head" colspan="5">Classes</th>
+					</tr>
+					<tr>
+						<td colspan="5"><img id="image" src="tiger.png" alt="logo"><a id="institution">University of Missouri</a></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Department</th>
+						<th>Name</th>
+						<th>Number</th>
+						<th>Description</th>
+						<th>Projects/Skills</th>
+					</tr>
+					<tr>
+						<td id="CMPSC" rowspan="2">Computer Science</td>
+						<td> Object Oriented Programming</td>
+						<td> CMP_SC 3330</td>
+						<td>This course focuses on object-oriented programming concepts:  abstraction, polymorphism, encapsulation, inheritance, interfaces, abstract classes, files, streams, and object serialization.  Topics such as GUI and event-driven programming are also tackled.</td>
+						<td>Created a database frontend that can successfully take in SQL commands and return proper server responses</td>
+						</tr>
+						<tr>
+							<td>Web Application Development I</td>
+							<td>CMP_SC 2830</td>
+							<td>This course will attempt to provide a comprehensive understanding of the evolution, the technologies, and the tools of the Internet. In particular, issues pertaining to the World Wide Web and Multimedia (HTML, CGI, Web based applications) will be discussed in detail.</td>
+							<td>Learning proper css usage and complex web design</td>
+						</tr>
+						<tr>
+							<td id="INFOTC" rowspan="2">Information Technology</td>
+							<td>IOS Application Developement I</td>
+							<td>INFOTC 4405</td>
+							<td>This is a first in a series of courses on developing iOS applications using Xcode, and the Swift programming language on the macOS platform.</td>
+							<td>Created a multiuse conversion calculator</td>
+						</tr>
+						<tr>
+							<td>C#/.NET Development</td>
+							<td>INFOTC 4400</td>
+							<td>Learn how to develop and debug multi-threaded Windows desktop applications based on the object-oriented (OO), Model-View-Controller (MVC), and Model View ViewModel (MVVM) paradigms using C#, .NET, Windows Presentation Foundations (WPF), and Visual Studio.</td>
+							<td>Creating Windows Applications/Understanding .NET development</td>
+						</tr>
+						<tr>
+							<td id="ECE">Electrical Engineering</td>
+							<td>Microprocessor Engineering</td>
+							<td>ECE 3210</td>
+							<td>Introduction to microprocessor architectures and programming; memory, memory management and cache organizations, bus configurations and timing implications; parallel I/O and serial communication interfaces.</td>
+							<td>Learned about the efficiency of implementing Assembly in C, created a basic function calculator using assembly</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="wrap">
+					<div id="c1">
+						<img src="img.JPG" alt="self" id="selfie">
+					</div>
+					<div id="c2" class="align-top">
+						<h1 class="head">Adrian Atanasov</h1>
+						<hr>
+						<ul>
+							<li> Junior in Computer Science </li>
+							<li> Total Credits: 111 </li>
+						</ul>
+					</div>
+					<div id="c3" class="align-top">
+						<h1 class="head">Info</h1>
+						<hr>
+						<ul>
+							<li><a href="mailto:adriansatanasov@gmail.com">Email</a></li>
+							<li><a href="https://www.facebook.com/A3yko">Facebook</a></li>
+							<li><a href="https://www.linkedin.com/in/adrian-atanasov-49742361/">Linkedin</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</body>
+		</html>

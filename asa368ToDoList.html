@@ -1,0 +1,125 @@
+<!--
+Name: Adrian Atanasov
+Pawprint: asa368
+Date: 02/25/20
+Challenge: To-Do ListS20
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>To-Do List</title>
+
+    <script>
+        if(!window.localStorage.getItem('hello')){
+            window.location.replace("http://54.162.221.92.xip.io/portfolio/");
+        }
+        function titleChange() {
+            var name = prompt("Please enter a name for the List:");
+            if (name.length == 0) {
+                alert("Please enter a valid name");
+            } else {
+                document.getElementById("header").innerText = name;
+            }
+        }
+
+        function theme() {
+            var theme = document.getElementById("themeBtn");
+            theme.classList.toggle("dark");
+            if(theme.classList.contains("dark")){
+                document.getElementById("theme").innerText = "Dark";
+            }
+            else{
+                document.getElementById("theme").innerText = "Light";
+            }
+        }
+
+        function addItem(form) {
+            if(document.getElementById("title").value != "") {
+                if(document.getElementById("date").value != "") {
+                    let table = document.getElementById("todoTable");
+                    let row = table.insertRow(-1);
+                    let title = row.insertCell(0);
+                    let type = row.insertCell(1);
+                    let date = row.insertCell(2);
+                    const action = row.insertCell(3);
+                    title.innerHTML = document.getElementById("title").value;
+                    date.innerHTML = document.getElementById("date").value;
+                    type.innerText = document.getElementById("type").options[document.getElementById("type").selectedIndex].text;
+                    action.innerHTML = "<button onclick='removeItem(this); return false;'>DONE</button>";
+                }
+                else{
+                    alert("Please fill all the fields!");
+                }
+            }
+            else{
+                alert("Please fill all the fields!");
+            }
+        }
+
+        function removeItem(btndel) {
+            if (typeof(btndel) == "object") {
+                $(btndel).closest("tr").remove();
+            } else {
+                return false;
+            }
+        }
+        function reset(){
+            $('form[name="myform"]')[0].reset();
+        }
+    </script>
+</head>
+<body class="light" id="themeBtn">
+<h1 id="back"><a href="asa368ProjectsS20">Return to Projects</a></h1>
+<h2 id="header" ondblclick="titleChange()">ToDo List</h2>
+<button onclick="theme()" id="theme">Light</button>
+<div>
+    <table id="todoTable">
+        <tr>
+            <th class="column">Title</th>
+            <th class="column">Type</th>
+            <th class="column">Date</th>
+            <th class="column">Action</th>
+        </tr>
+    </table>
+</div>
+<div>
+    <form id="form">
+        <label class="space">Title:</label>
+        <input type="text" id="title">
+        <label class="space">Type</label>
+        <select id="type">
+            <option value="Homework">Homework</option>
+            <option value="Housework">Housework</option>
+            <option value="Task">Task</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+        <label class="space">Date</label>
+        <input type="date" id="date">
+        <button onclick="addItem(this.form.id); return false;">Submit</button>
+        <button onclick="reset(); return false;">Clear</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+<!-- References
+https://stackoverflow.com/questions/15866451/how-to-insert-row-at-end-of-table-with-htmltableelement-insertrow - (40-50)
+https://stackoverflow.com/questions/28916274/row-in-table-show-and-disappear - (61-69)
+https://www.w3schools.com/html/html_forms.asp - (88-102)
+https://www.w3schools.com/html/html_form_elements.asp - (88-102)
+https://www.w3schools.com/jquery/jquery_css_classes.asp - (68)
+https://www.w3schools.com/js/js_whereto.asp - (31)
+https://www.w3schools.com/jsref/met_win_prompt.asp - (26 - 33)
+https://www.w3schools.com/howto/howto_js_toggle_class.asp - (27-36)
+https://stackoverflow.com/questions/15315315/how-do-i-add-a-button-to-a-td-using-js - (50)
+https://stackoverflow.com/questions/11553768/remove-table-row-after-clicking-table-row-delete-button - (61-67)
+https://www.dev2qa.com/how-to-use-jquery-in-html/ - (14)
+https://www.w3schools.com/jsref/prop_text_value.asp - (48-50)
+-->

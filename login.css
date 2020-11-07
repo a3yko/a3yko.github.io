@@ -1,0 +1,13 @@
+body{
+    margin: 0 auto;
+    color: gold;
+    background-color: black;
+}
+
+button{
+    font-size: 50px;
+}
+div{
+    position: relative;
+    align-content: center;
+}

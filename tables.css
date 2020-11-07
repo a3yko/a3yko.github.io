@@ -1,0 +1,114 @@
+/*
+Name: Adrian Atanasov
+Pawprint: asa368
+Date: 02/10/20
+Challenge 4: Tables Spring 2020
+
+https://www.htmlcsscolor.com/hex/43464B - 25
+https://www.color-hex.com/color-names.html - 29
+https://www.color-hex.com/color/4682b4 - 24
+https://css-tricks.com/almanac/properties/w/whitespace/ - 21
+https://fonts.google.com - 52
+https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/ - 52
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow - 20
+
+*/
+#wrap{
+	white-space: nowrap;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: solid 1px gold;
+	box-shadow: 10px 5px 5px gold;
+	width: 50%;
+}
+#c1{
+	margin: 5px;
+	display: inline-block;
+	width: 30%;
+}
+#c2{
+	display: inline-block;
+	width: 35%;
+}
+#c3{
+	display: inline-block;
+	width: 30%;
+}
+#selfie{
+	border: solid 1px gold;
+	width: 200px;
+	height: 150px;
+}
+#image{
+	float: left;
+	width: 150px;
+	height: 100px;
+}
+#institution{
+	float: right;
+	margin-top: 25px;
+	white-space: nowrap;
+	font-size: 30px;
+}
+#INFOTC{
+	background-color: #4682B4;
+}
+#CMPSC{
+	background-color: #43464B;
+}
+#ECE{
+	background-color: #ee5c42;
+}
+div{
+	color: white;
+	margin: 1px;
+}
+hr{
+	border-color: gold;
+}
+li{
+	text-align: right;
+	color: white;
+	list-style: none;
+}
+td{
+	color: white;
+	border: 1px solid gold;
+	margin: 1px;
+	padding: 3px;
+}
+th{
+	text-align: center;
+	color: white;
+	border: 1px solid gold;
+	margin: 1px;
+	padding: 3px;
+}
+body{
+	font-family: 'Open Sans', sans-serif, 'Roboto Mono', monospace;
+	background-color: black;
+	margin: 0px;
+}
+.bar {
+	 list-style-type: none;
+	 margin-top: 1px;
+	 float: left;
+	 font-size: 30px;
+	 height: 50px;
+	 width: 100%;
+	 background-color: gold;
+	 border-radius: 5px;
+ }
+.alignt{
+	margin: 20px;
+	float: left;
+	text-align: center;
+	font-family: fantasy;
+	font-style: oblique;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.head{
+	text-align: center;
+	font-size: 30px;
+}

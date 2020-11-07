@@ -1,0 +1,197 @@
+<!--
+Name: Adrian Atanasov
+Pawprint: asa368
+Date: 02/3/20
+Challenge 3: Multi-Column Layout
+https://www.w3schools.com/howto/howto_css_two_columns.asp 20-114
+https://www.w3schools.com/css/css_boxmodel.asp 20-114
+https://www.w3schools.com/cssref/pr_font_font-style.asp - 125
+https://www.99colors.net/name/charcoal - 57
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<meta charset="utf-8">
+		<title>Skills</title>
+		<style>
+			body{
+				background-color: black;
+				margin: 0px;
+			}
+			p {
+				color: white;
+			}
+			h3{
+				text-align: center;
+				margin: 5px;
+			}
+			h4{
+				margin: 10px;
+			}
+			li a{
+				text-decoration: none;
+			}
+			.alignt{
+				float: left;
+				text-align: center;
+				font-family: fantasy;
+				font-style: oblique;
+				font-size: 20px;
+				margin: 20px;
+			}
+			.bar {
+					list-style-type: none;
+					margin-top: 1px;
+					float: left;
+					font-size: 30px;
+					height: 50px;
+					width: 100%;
+					background-color: gold;
+					border-radius: 5px;
+				}
+			#align{
+				position: relative;
+				color: gold;
+				font-size: 30px;
+				font-style: oblique;
+				text-align: center;
+			}
+			.main{
+				background-color: #36454F;
+				border-radius: 15px;
+				border-style: solid;
+				border-color: gold;
+				border-width: 6px;
+				margin: 0 auto;
+				width: 950px;
+				padding: 8px;
+				display: table;
+				content: "";
+				clear: both;
+			}
+			.column{
+				float: left;
+				height: 390px;
+				margin: 20px;
+				padding: 20px;
+				border-radius: 15px;
+				border-style: solid;
+			}
+			.row{
+				float: left;
+				width: 372px;
+				padding: 20px;
+				border-radius: 15px;
+				border-width: 8px;
+				border-style: solid;
+			}
+			.left{
+				width: 241px;
+				color: white;
+				background-color: black;
+				border-width: 8px;
+				border-color: gold;
+			}
+			.middle{
+				float: left;
+				width: 350px;
+				margin: 20px;
+			}
+			.right{
+				width: 200px;
+				background-color: black;
+				color: white;
+				border-width: 8px;
+				border-color: gold;
+			}
+			.top{
+				color: white;
+				background-color: black;
+				height: 190px;
+				border-color: gold;
+				margin-bottom: 20px;
+			}
+			.bottom{
+				color: white;
+				background-color: black;
+				height: 250px;
+				border-color: gold;
+			}
+		</style>
+		<script>
+			if(!window.localStorage.getItem('hello')){
+				window.location.replace("http://54.162.221.92.xip.io/portfolio/");
+			}
+		</script>
+	</head>
+	<body>
+		<ul class="bar">
+			<li class="alignt"><a href="asa368Portfolio">Adrian Atanasov</a></li>
+			<li class="alignt"><a href="asa368Columns">Skills</a></li>
+			<li class="alignt"><a href="asa368TablesS20">Courses Taken</a></li>
+			<li class="alignt"><a href="asa368ProjectsS20">Projects</a></li>
+		</ul>
+		<!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+		<div class="main container-fluid">
+			<h2 id="align">Skills</h2>
+			<!-- Left Column -->
+			<!-- Put left column physical width calculations here: 40 + 40 + 241 + 16 = 337
+			-->
+			<div class="left column">
+				<h4>Languages</h4>
+				<ul>
+					<li>C++</li>
+					<li>Python</li>
+					<li>Bash</li>
+					<li>Powershell</li>
+					<li>VBA</li>
+					<li>C#</li>
+					<li>C</li>
+					<li>Java</li>
+					<li>SQL</li>
+				</ul>
+			</div>
+			<!-- Row Wrapper. This div will contain two rows -->
+			<!--Put middle column physical width calculations here: 428 + 40 = 468
+			-->
+			<div class="middle">
+				<section class="top row">
+				<h3>Course Work</h3>
+				<ul>
+					<li>Object Orient Programming</li>
+					<li>Microprocessor Engineering</li>
+					<li>Database Systems</li>
+					<li>IOS Application Development</li>
+				</ul>
+			</section>
+			<section class="bottom row">
+				<h3>Other</h3>
+				<ul>
+					<li>Splunk Fundamentals I</li>
+					<li>Splunk Fundamentals II</li>
+					<li>Microsoft Deployment Toolkit</li>
+					<li>Patch Management</li>
+					<li>Project Management</li>
+					<li>Docker Deployment</li>
+					<li>Appliance Management</li>
+				</ul>
+			</section>
+			</div>
+			<!-- Right Column -->
+			<!--Put right column physical width calculations here: 200 + 40 + 40 + 16 = 296
+			-->
+			<div class="right column">
+				<h4>Technologies</h4>
+				<ul>
+					<li>Mac OS</li>
+					<li>Windows</li>
+					<li>Redhat</li>
+					<li>CentOS</li>
+					<li>Jira</li>
+				</ul>
+			</div>
+		</div>
+		<p>Last Updated 3/17/20</p>
+	</body>
+</html>

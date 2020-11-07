@@ -1,0 +1,93 @@
+<!--
+Name: Adrian Atanasov
+Pawprint: asa368
+Date: 02/17/20
+Challenge: Flex Box S20
+
+https://www.w3schools.com/tags/tag_span.asp - 29,37,45
+https://www.google.com/imgres?imgurl=http%3A%2F%2Fclipartmag.com%2Fimages%2Fcheck-mark-jpg-22.jpg&imgrefurl=http%3A%2F%2Fclipartmag.com%2Fcheck-mark-jpg&tbnid=6B3WCjMbOeA17M&vet=12ahUKEwjh-KHPzaXoAhUNSKwKHVk5Ac0QMygCegUIARD6AQ..i&docid=zY8rIT7oQ0SaAM&w=425&h=393&q=checkmark%20jpg&hl=en&client=safari&ved=2ahUKEwjh-KHPzaXoAhUNSKwKHVk5Ac0QMygCegUIARD6AQ - 53
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="projects.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<script src="webservice.js"></script>
+		<title>Projects</title>
+		<script>
+			if(!window.localStorage.getItem('hello')){
+				window.location.replace("http://54.162.221.92.xip.io/portfolio/");
+			}
+		</script>
+	</head>
+	<body>
+		<ul class="bar">
+			<li class="alignt"><a href="asa368Portfolio">Adrian Atanasov</a></li>
+			<li class="alignt"><a href="asa368Columns">Skills</a></li>
+			<li class="alignt"><a href="asa368TablesS20">Courses Taken</a></li>
+			<li class="alignt"><a href="asa368ProjectsS20">Projects</a></li>
+		</ul>
+		<div id="main" class="container-fluid">
+			<div class="cards">
+				<img src="assets/lavaCake.jpg" alt="cake">
+				<div class="info">
+					<span>Conversion Calculator</span>
+					<p>Built on Swift for IOS its a basic unit converter</p>
+					<a class="link" href="https://github.com/a3yko/Calculator">Visit</a>
+				</div>
+			</div>
+			<div class="cards">
+				<img src="assets/mizzouFootball.jpg" alt="football">
+				<div class="info">
+					<span>DB GUI</span>
+					<p>GUI for connecting a remote MariaDB database</p>
+					<a class="link" href="https://github.com/a3yko/DB-GUI">Visit</a>
+				</div>
+			</div>
+			<div class="cards">
+				<img src="assets/mountain.jpg" alt="mnt">
+				<div class="info">
+					<span>Assembly Calculator</span>
+					<p>A 4 function calculator build on assembly for RasPi</p>
+					<a class="link" href="https://github.com/a3yko/4-Function-Calculator">Visit</a>
+				</div>
+			</div>
+			<div class="cards">
+				<img src="assets/check.jpg" alt="check">
+				<div class="info">
+					<span>To Do List</span>
+					<p>Web Todo List</p>
+					<a class="link" href="asa368ToDoList">Visit</a>
+				</div>
+			</div>
+			<div class="cards">
+				<img src="assets/math.jpg" alt="functions">
+				<div class="info">
+					<span>Functions</span>
+					<p>4 different programming functions, factorials, string reverse, sum of squares</p>
+					<a class="link" href="http://ec2-54-162-221-92.compute-1.amazonaws.com/functions/">Visit</a>
+				</div>
+			</div>
+			<div class="cards">
+				<img src="assets/webservice.jpg" alt="functions">
+				<div class="info">
+					<span>Web Service</span>
+					<p id="webService"></p>
+					<a class="link" href="http://ec2-54-162-221-92.compute-1.amazonaws.com/ajax/">Visit</a>
+				</div>
+			</div>
+			<div class="cards">
+				<img src="assets/league.jpg" alt="functions">
+				<div class="info">
+					<span>League Stats</span>
+					<p id="Lstats"></p>
+					<a class="link" href="http://ec2-54-162-221-92.compute-1.amazonaws.com/final/">Visit</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

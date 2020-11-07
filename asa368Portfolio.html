@@ -13,17 +13,25 @@ https://css-tricks.com/almanac/properties/t/text-align/- 57
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<title>Adrian Atanasov</title>
 		<meta charset="utf-8">
+		<script>
+			if(!window.localStorage.getItem('hello')){
+				window.location.replace("http://54.162.221.92.xip.io/portfolio/");
+			}
+		</script>
 		<style>
-		#alignt{
-			position: relative;
-			text-align: center;
-			font-family: fantasy;
-			font-style: oblique;
-			font-size: 20px;
-			margin-top: 10px;
-			margin-bottom: 10px;
+		body{
+			margin: 0px;
+		}
+		.alignt{
+		float: left;
+		text-align: center;
+		font-family: fantasy;
+		font-style: oblique;
+		font-size: 20px;
+		margin: 20px;
 		}
 		#alignh{
 			position: relative;
@@ -32,30 +40,30 @@ https://css-tricks.com/almanac/properties/t/text-align/- 57
 			font-style: oblique;
 			font-size: 20px;
 			margin-top: 10px;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 		.image{
-			position: relative;
-			margin-top: 100px;
-			margin-bottom: 50px;
-			margin-left: 30%;
+			white-space: nowrap;
+			vertical-align: middle;
+			margin-left: 33%;
+			margin-bottom: 15px;
 			max-width: 40%;
-			border: solid;
-			border-width: 1px;
-			border-color: orange;
+			border: solid 1px gold;
 		}
-				.bar {
-					list-style-type: none;
-					position: fixed;
-					margin: 5px;
-					font-size: 30px;
-					height: 10%;
-					width: 100%;
-					overflow: hidden;
-					background-color: gold;
-				}
+		.bar {
+		list-style-type: none;
+		margin-top: 1px;
+		float: left;
+		font-size: 30px;
+		height: 50px;
+		width: 100%;
+		background-color: gold;
+		border-radius: 5px;
+		}
+
+
 				p {
-					color: white;
+					color: goldenrod;
 					font-size: 20px;
 					text-align: center;
 					font-family: cursive;
@@ -63,13 +71,8 @@ https://css-tricks.com/almanac/properties/t/text-align/- 57
 				body{
 					background-color: black;
 				}
-				li {
-					float: left;
-				}
-				li a {
-					display: block;
+				a{
 					color: black;
-					padding: 10px 10px;
 					text-decoration: none;
 				}
 				h1 {
@@ -79,7 +82,10 @@ https://css-tricks.com/almanac/properties/t/text-align/- 57
 	</head>
 	<body>
 		<ul class="bar">
-			<li id="alignt"><a>Adrian Atanasov</a></li>
+			<li class="alignt"><a href="asa368Portfolio">Adrian Atanasov</a></li>
+			<li class="alignt"><a href="asa368Columns">Skills</a></li>
+			<li class="alignt"><a href="asa368TablesS20">Courses Taken</a></li>
+			<li class="alignt"><a href="asa368ProjectsS20">Projects</a></li>
 		</ul>
 		<img class="image" src="img.JPG" alt="me">
 		<h1 id="alignh">Adrian Atanasov - University of Missouri Computer Science</h1>

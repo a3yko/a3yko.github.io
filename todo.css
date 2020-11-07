@@ -1,0 +1,82 @@
+/*
+Name: Adrian Atanasov
+Pawprint: asa368
+Date: 02/25/20
+Challenge 6: Todo List
+
+*/
+#back {
+    text-align: left;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+#header {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+#theme {
+    float: right;
+    vertical-align: top;
+}
+
+#todoTable {
+    position: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+}
+#form {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid 1px;
+    white-space: nowrap;
+    width: 755px;
+    height: 30px;
+    align-content: center;
+}
+
+.light {
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif, 'Roboto Mono', monospace;
+}
+
+.dark {
+    background-color: black;
+    color: gold;
+    border-color: gold;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif, 'Roboto Mono', monospace;
+}
+
+.column {
+    vertical-align: text-top;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif, 'Roboto Mono', monospace;
+    font-family: cursive;
+    font-size: 30px;
+    height: 10%;
+}
+
+.space {
+    margin-left: 30px;
+}
+
+table {
+    border: solid 1px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+tr{
+
+    border: solid 1px;
+    border-radius: 10px;
+    height: 20px;
+}
